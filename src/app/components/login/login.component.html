@@ -1,0 +1,11 @@
+<section>
+  <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+    <label for="user">Usuário: </label>
+    <input type="text" id="user" formControlName="user"/>
+
+    <label for="password">Senha: </label>
+    <input type="password" id="password" formControlName="password"/>
+
+    <button type="submit">Login</button>
+  </form>
+</section>
